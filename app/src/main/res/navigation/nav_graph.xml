@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mfragment_home">
+
+    <fragment
+        android:id="@+id/mfragment_home"
+        android:name="com.example.appartelisad1.view.fragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentGallery"
+            app:destination="@id/mfragment_galeria" />
+    </fragment>
+    <fragment
+        android:id="@+id/mfragmet_artista"
+        android:name="com.example.appartelisad1.view.fragmentArtist"
+        android:label="fragment_artist"
+        tools:layout="@layout/fragment_artist" >
+        <action
+            android:id="@+id/action_fragmentArtist_to_fragmentEvent3"
+            app:destination="@id/mfragment_evento" />
+        <action
+            android:id="@+id/action_mfragmet_artista_to_fragmentArtistaDetalle"
+            app:destination="@id/mfragmentArtistaDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/mfragment_galeria"
+        android:name="com.example.appartelisad1.view.fragmentGallery"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_fragmentGallery_to_fragmentArtist"
+            app:destination="@id/mfragmet_artista" />
+        <action
+            android:id="@+id/action_mfragment_galeria_to_fragmentDetailGallery"
+            app:destination="@id/mfragmentDetailGallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/mfragment_evento"
+        android:name="com.example.appartelisad1.view.fragmentEvent"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/mfragmentArtistaDetalle"
+        android:name="com.example.appartelisad1.view.fragmentArtistaDetalle"
+        android:label="fragmentArtistaDetalle" />
+    <fragment
+        android:id="@+id/mfragmentDetailGallery"
+        android:name="com.example.appartelisad1.view.fragmentDetailGallery"
+        android:label="fragment_detail_gallery"
+        tools:layout="@layout/fragment_detail_gallery" />
+</navigation>

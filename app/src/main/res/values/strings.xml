@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ad Astra Hub</string>
+    <string name="strlogoArteLista">Ad Astra Hub</string>
+    <string name="Bienvenidos">Ad Astra Hub</string>
+    <string name="hUserName">Nombre de usuario:</string>
+    <string name="hPassword">Contraseña</string>
+    <string name="strContrasenia">Contraseña</string>
+    <string name="strIniciarSesion">Iniciar sesión</string>
+    <string name="strNoTieneCuenta">¿No tienes una cuenta?</string>
+    <string name="strCreaUna">Crear una</string>
+    <string name="txtUsername">Nombre de usuario</string>
+    <string name="txtEmail">Email</string>
+    <string name="hConfirmarPassword">Confirmar contraseña</string>
+    <string name="strCrearCuenta">Crear cuenta</string>
+    <string name="strTituloHome">Ad Astra Hub</string>
+    <string name="strTituloHomeVistas">Nuestra energía se transforma y se vuelve parte del cosmos.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="strArtista">Galaxias</string>
+    <string name="strEvento">Efemérides Astronómicas</string>
+    <string name="strGaleria">Nebulosas</string>
+    <string name="strNombreArtista">Argentina Vargas</string>
+    <string name="strPosts">Descubre nuevos temas</string>
+    <string name="strMeGusta">Me gusta</string>
+    <string name="strPrecioPintura">1,200.00</string>
+    <string name="strMoneda">$</string>
+    <string name="strInfoTitle">Agujeros Negros</string>
+    <string name="strInfoDescription">Un agujero negro es un objeto en el espacio tan denso que ni siquiera la luz puede escapar de su inmensa atracción gravitatoria.</string>
+    <string name="strImageName">Nebulosa de Orión</string>
+    <string name="strImgDescription">NASA</string>
+
+</resources>

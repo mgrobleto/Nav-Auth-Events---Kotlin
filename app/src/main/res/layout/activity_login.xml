@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity_login">
+
+    <ImageView
+        android:id="@+id/imgLogoLogin"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/aah_logo"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/TvLogoArteLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bienvenidos"
+        android:textSize="@dimen/tamtexto1"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogoLogin"
+        android:layout_marginTop="20sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margenizq"
+        android:layout_marginRight="@dimen/margender"
+        android:layout_marginTop="@dimen/margen"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvLogoArteLista">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/inputUsername"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/txtUsername"
+                android:drawablePadding="@dimen/margender"
+                android:drawableLeft="@drawable/ic_username"
+                android:gravity="left|center_horizontal"
+                android:background="@color/colorbackgroundcard"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margentop"
+            android:id="@+id/inputPassword"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hPassword"
+            android:drawablePadding="@dimen/margender"
+            android:drawableLeft="@drawable/ic_password"
+            android:gravity="left|center_horizontal"
+            android:inputType="textPassword"
+            android:background="@color/colorbackgroundcard"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margentop1"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="onClickArteLista"
+            android:text="@string/strIniciarSesion"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margen">
+
+            <TextView
+                android:id="@+id/tvNoTieneCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strNoTieneCuenta"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/tamtexto2" />
+            <TextView
+                android:id="@+id/tvCreaCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_toRightOf="@id/tvNoTieneCuenta"
+                android:text="@string/strCrearCuenta"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/tamtexto2"
+                android:textStyle="bold"
+                android:onClick="onClickCrearCuenta"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
